@@ -2181,6 +2181,16 @@ footer .left h5 span {
   font-size: 90px;
   font-family: "Intro";
 }
+footer .left h5 span.mod {
+  top: -70px;
+  color: #000;
+}
+footer .left h5 span.mod:before {
+  content: url(../images/raccoon.png);
+  position: absolute;
+  top: 0;
+  left: 90%;
+}
 footer .left .address {
   color: #fff;
   font-size: 18px;
@@ -2645,6 +2655,9 @@ footer form.right .checkbox:not(checked).wrong + label:after {
   -webkit-transform: scale(0.7);
   -ms-transform: scale(0.7);
   transform: scale(0.7);
+}
+.feetback {
+  margin-bottom: 120px;
 }
 .feetback h2 {
   margin-bottom: 31px;
