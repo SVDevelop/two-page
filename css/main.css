@@ -2592,6 +2592,7 @@ footer form.right .checkbox:not(checked).wrong + label:after {
   text-align: center;
 }
 .crossposting .title {
+  position: relative;
   padding-top: 28px;
   display: -moz-flex;
   display: -ms-flex;
@@ -2612,6 +2613,18 @@ footer form.right .checkbox:not(checked).wrong + label:after {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.crossposting .title:before {
+  content: url(../images/ellipse-l.png);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+.crossposting .title:after {
+  content: url(../images/ellipse-r.png);
+  position: absolute;
+  bottom: -70px;
+  right: -30px;
 }
 .crossposting .title .socseti {
   margin-top: 28px;
@@ -2706,7 +2719,8 @@ footer form.right .checkbox:not(checked).wrong + label:after {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  border: 2px solid red;
+  outline: none;
+  border: none;
 }
 .feetback .form textarea.form-input {
   position: relative;
